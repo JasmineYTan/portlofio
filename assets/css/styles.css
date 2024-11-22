@@ -9,12 +9,18 @@ body {
     padding: 0;
 }
 .content-wrapper {
-    max-width: 75%;
+    max-width: 85%;
     margin: 0 auto;
     background: rgba(255, 255, 255, 0.9);
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
+hr {
+    border: 3px solid brown;
+    padding: 0%;
+}
+
 .navbar {
     margin-bottom: 0;
 }
@@ -29,7 +35,7 @@ header p.lead {
     font-size: 1.25rem;
 }
 section {
-    padding: 60px 0;
+    padding: 20px 0;
 }
 section h2 {
     font-size: 2rem;
