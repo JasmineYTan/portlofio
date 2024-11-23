@@ -9,6 +9,11 @@
 </head>
 <body>
 
+    <video autoplay muted loop id="backgroundVideo">
+        <source src="assets/videos/background.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
     <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top px-3">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Portfolio</a>
@@ -41,109 +46,253 @@
     </nav>
 
     <div class="content-wrapper">
-
         <section id="about" class="py-3">
             <div class="container">
-                <h2 class="text-center">About Me</h2>
+                <h2 class="text-center"><img src="assets/titles/About Me.png" alt="" class="img-fluid" style="width: auto; height: 7vw;"></h2>
                 <div class="row">
-                    <div class="col-md-4">
-                        <img src="/assets/images/Aboutme1.png" class="img-fluid" alt="About Me">
+                    <div class="col-md-4 col-12">
+                        <img src="/assets/images/Aboutme1.png" class="img-fluid" alt="About Me" data-bs-toggle="modal" data-bs-target="#aboutMeModal">
                     </div>
-                    <div class="col-md-8">
-                        <p>A brief description about yourself.</p>
+                    <div class="col-md-8 col-12">
+                        <p class="responsive-text">I am Jasmine Nicole Y. Tan, A first year information technology student in University of the East. I do freelance artwork, specializing in digital illustrations, vtuber, and vtuber models.</p>
                     </div>
                 </div>
             </div>
         </section>
-
+        
+        <!-- Modal for about me image -->
+        <div class="modal fade" id="aboutMeModal" tabindex="-1" aria-labelledby="aboutMeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="aboutMeModalLabel">About Me</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="/assets/images/Aboutme1.png" class="img-fluid" alt="About Me">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
         <hr>
-
+        
         <section id="achievements" class="py-3 bg-light">
             <div class="container">
-                <h2 class="text-center">Achievements</h2>
+                <h2 class="text-center"><img src="assets/titles/Achievements.png" alt="" class="img-fluid" style="width: auto; height: 7vw;"></h2>
                 <div class="row">
-                    <div class="col-md-8">
-                        <p>List your achievements here.</p>
+                    <div class="col-md-4 col-12">
+                        <p class="responsive-text">in the field of freelancing:
+                            <br>
+                            - be able to earn above minimum wage through freelance drawing.
+                            <br>
+                            - join a merchandising company that specializes.
+                            in merch for influences.
+                            <br>
+                            - consistently grow my social presence.
+                        </p>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4 col-12">
+                        <p class="responsive-text">academically:
+                            <br>
+                            - consistently become an honor student for 4 years.
+                            <br>
+                            - graduate senior high school.
+                            <br>
+                            - finalize our research paper.
+                        </p>
+                    </div>
+                    <div class="col-md-4 col-12">
+                        <img src="assets/images/Achievements1.png" class="img-fluid" alt="Achievements" data-bs-toggle="modal" data-bs-target="#achievementsModal">
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Modal for achievements image -->
+        <div class="modal fade" id="achievementsModal" tabindex="-1" aria-labelledby="achievementsModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="achievementsModalLabel">Achievements</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
                         <img src="assets/images/Achievements1.png" class="img-fluid" alt="Achievements">
                     </div>
                 </div>
             </div>
-        </section>
-
+        </div>
+        
         <hr>
-
+        
         <section id="skills" class="py-3">
             <div class="container">
-                <h2 class="text-center">Skills</h2>
+                <h2 class="text-center"><img src="assets/titles/Skills.png" alt="" class="img-fluid" style="width: auto; height: 7vw;"></h2>
                 <div class="row text-center">
-                    <div class="col-md-4">
+                    <div class="col-md-4 col-12">
+                        <img src="assets/images/Skills1.png" class="img-fluid" alt="Skill 1" data-bs-toggle="modal" data-bs-target="#skillsModal1">
+                    </div>
+                    <div class="col-md-4 col-12">
+                        <img src="assets/images/Skills2.png" class="img-fluid" alt="Skill 2" data-bs-toggle="modal" data-bs-target="#skillsModal2">
+                    </div>
+                    <div class="col-md-4 col-12">
+                        <img src="assets/images/Skills3.png" class="img-fluid" alt="Skill 3" data-bs-toggle="modal" data-bs-target="#skillsModal3">
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Modals for skills images -->
+        <div class="modal fade" id="skillsModal1" tabindex="-1" aria-labelledby="skillsModalLabel1" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="skillsModalLabel1">Art</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
                         <img src="assets/images/Skills1.png" class="img-fluid" alt="Skill 1">
                     </div>
-                    <div class="col-md-4">
+                </div>
+            </div>
+        </div>
+        
+        <div class="modal fade" id="skillsModal2" tabindex="-1" aria-labelledby="skillsModalLabel2" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="skillsModalLabel2">Web Design</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
                         <img src="assets/images/Skills2.png" class="img-fluid" alt="Skill 2">
                     </div>
-                    <div class="col-md-4">
+                </div>
+            </div>
+        </div>
+        
+        <div class="modal fade" id="skillsModal3" tabindex="-1" aria-labelledby="skillsModalLabel3" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="skillsModalLabel3">Chess</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
                         <img src="assets/images/Skills3.png" class="img-fluid" alt="Skill 3">
                     </div>
                 </div>
             </div>
-        </section>
-
+        </div>
+        
         <hr>
-
+        
         <section id="projects" class="py-3 bg-light">
             <div class="container">
-                <h2 class="text-center">Projects and Activities</h2>
+                <h2 class="text-center"><img src="assets/titles/Project and Activities.png" alt="" class="img-fluid" style="width: auto; height: 7vw;"></h2>
                 <div class="row text-center">
-                    <div class="col-md-4">
-                        <img src="assets/images/Activities1.png" class="img-fluid" alt="Project 1">
-
+                    <div class="col-md-4 col-12">
+                        <img src="assets/images/Activities1.png" class="img-fluid" alt="Project 1" data-bs-toggle="modal" data-bs-target="#projectsModal1">
                     </div>
-                    <div class="col-md-4">
-                        <img src="assets/images/Activities2.png" class="img-fluid" alt="Project 2">
-
+                    <div class="col-md-4 col-12">
+                        <img src="assets/images/Activities2.png" class="img-fluid" alt="Project 2" data-bs-toggle="modal" data-bs-target="#projectsModal2">
                     </div>
-                    <div class="col-md-4">
-                        <img src="assets/images/Activities3.png" class="img-fluid" alt="Project 3">
-
+                    <div class="col-md-4 col-12">
+                        <img src="assets/images/Activities3.png" class="img-fluid" alt="Project 3" data-bs-toggle="modal" data-bs-target="#projectsModal3">
                     </div>
                 </div>
             </div>
         </section>
-
+        
+        <div class="modal fade" id="projectsModal1" tabindex="-1" aria-labelledby="projectsModalLabel1" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="projectsModalLabel1">Research Paper</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="assets/images/Activities1.png" class="img-fluid" alt="Project 1">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="modal fade" id="projectsModal2" tabindex="-1" aria-labelledby="projectsModalLabel2" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="projectsModalLabel2">Tournaments</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="assets/images/Activities2.png" class="img-fluid" alt="Project 2">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="modal fade" id="projectsModal3" tabindex="-1" aria-labelledby="projectsModalLabel3" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="projectsModalLabel3">Merchandise</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="assets/images/Activities3.png" class="img-fluid" alt="Project 3">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
         <hr>
-
+        
         <section id="hobbies" class="py-3">
             <div class="container">
-                <h2 class="text-center">Hobbies and Interests</h2>
+                <h2 class="text-center"><img src="assets/titles/Hobbies and Interests.png" alt="" class="img-fluid" style="width: auto; height: 7vw;"></h2>
                 <div class="row">
-                    <div class="col-md-4">
-                        <img src="assets/images/Interest1.png" class="img-fluid" alt="Hobbies and Interests">
+                    <div class="col-md-4 col-12">
+                        <img src="assets/images/Interest1.png" class="img-fluid" alt="Hobbies and Interests" data-bs-toggle="modal" data-bs-target="#hobbiesModal">
                     </div>
-                    <div class="col-md-8">
-                        <p>
+                    <div class="col-md-8 col-12">
+                        <p class="responsive-text">
                             My main hobby is drawing, I love creating unique pieces that show off my creativity, I also love to watch anime and play games in my free time. Favorite genres being romance and fantasy.
                             <br>
-                            I don't do sports, hoever, I once played chess a lot. Joining different tournaments and competitions.
+                            I don't do sports, however, I once played chess a lot. Joining different tournaments and competitions.
                         </p>
                     </div>
                 </div>
             </div>
         </section>
-
+        
+        <!-- Modals for hobby images -->
+        <div class="modal fade" id="hobbiesModal" tabindex="-1" aria-labelledby="hobbiesModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="hobbiesModalLabel">Gaming</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="assets/images/Interest1.png" class="img-fluid" alt="Hobbies and Interests">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
         <hr>
-
+        
         <section id="contact" class="py-3 bg-light">
             <div class="container">
-                <h2 class="text-center">Contact Information</h2>
+                <h2 class="text-center"><img src="assets/titles/Contact Information.png" alt="" class="img-fluid" style="width: auto; height: 7vw;"></h2>
                 <div class="card mx-auto" style="max-width: 90%;">
-
-                        <p><strong>Name:</strong> Jasmine Nicole</p>
-                        <p><strong>Email:</strong> lofikun@gmail.com</p>
-                        <p><strong>Phone:</strong> +63 995 9214 389</p>
-
+                    <div class="card-body">
+                        <p class="responsive-text"><strong>Name:</strong> Jasmine Nicole</p>
+                        <p class="responsive-text"><strong>Email:</strong> lofikun@gmail.com</p>
+                        <p class="responsive-text"><strong>Phone:</strong> +63 995 9214 389</p>
+                    </div>
                 </div>
             </div>
         </section>
