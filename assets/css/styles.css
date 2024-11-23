@@ -23,9 +23,16 @@ body {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     z-index: 1000;
-    cursor: move;
     max-height: 200px;
     overflow-y: auto;
+}
+
+.drag-handle {
+    cursor: move;
+    background: rgba(0, 0, 0, 0.1);
+    padding: 5px;
+    text-align: center;
+    border-radius: 10px 10px 0 0;
 }
 
 @media (max-width: 576px) {
@@ -52,7 +59,21 @@ body {
     }
 }
 
+.show-music-player-btn {
+    display: none; /* Hide the button on PC */
+}
 
+.hide-music-player-btn {
+    background: rgba(255, 255, 255, 0.9);
+    border: none;
+    border-radius: 10px;
+    padding: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; /* Center the hide button */
+}
 
 .music-player .controls,
 .music-player .progress-controls,

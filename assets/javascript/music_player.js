@@ -10,6 +10,8 @@ document.addEventListener('DOMContentLoaded', function () {
     const songTitle = document.getElementById('songTitle');
     const toggleMusicPlayerBtn = document.getElementById('toggleMusicPlayerBtn');
     const musicPlayer = document.getElementById('musicPlayer');
+    const dragHandle = document.querySelector('.drag-handle');
+
 
     const songs = [
         { title: 'Song Title: 2am', src: 'assets/jukebox/2am.mp3' },
@@ -92,7 +94,7 @@ document.addEventListener('DOMContentLoaded', function () {
     let isDragging = false;
     let offsetX, offsetY;
 
-    musicPlayer.addEventListener('mousedown', function (event) {
+    dragHandle.addEventListener('mousedown', function (event) {
         isDragging = true;
         offsetX = event.clientX - musicPlayer.offsetLeft;
         offsetY = event.clientY - musicPlayer.offsetTop;
